@@ -1,0 +1,46 @@
+.calendar {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.month {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.weekdays, .days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.weekdays div, .days div {
+    width: 14.28%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.weekdays {
+    background-color: #e9ecef;
+    border-bottom: 1px solid #ddd;
+}
+
+.days div {
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.days div:hover {
+    background-color: #007bff;
+    color: white;
+}
